@@ -24,7 +24,8 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-06</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>goit-markup-hw-07</title>
   </head>
   <body class="body">
     <!--------------------------------header-box-------------------------------->
@@ -124,10 +125,10 @@
             <label class="checkbox">
               <span class="checkbox__container">
                 <input class="checkbox__form" name="agreement" type="checkbox">
-                <svg class="icon-checked" width="16px" height="15px">
+                <svg class="form-icon form-icon--checked" width="16px" height="15px">
                   <use href="./images/svg/sprite.svg#icon-icon-check" width="16" height="15"></use>
                 </svg>
-                <span class="icon-unchecked"></span>
+                <span class="form-icon form-icon--unchecked"></span>
               </span>
               <span class="checkbox__label">
                 Соглашаюсь с рассылкой и принимаю
@@ -249,7 +250,7 @@
       </section>
 
       <!----------------------TEAM-------------------------->
-      <section class="team">
+      <section class="shift-list shift-list--team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
 
@@ -523,7 +524,7 @@
         </div>
 
         <div class="join-in">
-          <p class="join-in__text">Присоединяйтесь</p>
+          <p class="subscribe__text">Подпишитесь на рассылку</p>
           <ul class="nets">
             <li class="nets__item">
               <a class="nets__link nets__link--dark" href="http://facebook.com">
@@ -559,7 +560,7 @@
           </ul>
         </div>
          <div class="subscribe__container">
-           <p class="subscribe__title">Подпишитесь на рассылку</p>
+           <p class="subscribe__text">Подпишитесь на рассылку</p>
           <form class="subscribe__form" autocomplete="off">
             <label class="hidden-caption" for="footer-email" >Почта</label>    
             <input class="subscribe__email" name="email" type="email" id="footer-email" placeholder="E-mail">

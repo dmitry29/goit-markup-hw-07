@@ -1,0 +1,91 @@
+:root {
+  --color-text: #757575;
+  --color-title: #212121;
+  --color-accent: #2196f3;
+  --studio-color: black;
+  --hero-text-color: #ffffff;
+  --background-team-color: #f5f4fa;
+  --background-footer: #2f303a;
+  --footer-studio: white;
+  --footer-contacts: #ffffff99;
+  --border-radius: 0px 0px 4px 4px;
+  --card-set-gap: 30px;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --list-style: none;
+  --text-decoration: none;
+  --transition-timing: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.hidden-caption {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--color-title);
+  margin-bottom: 50px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  border-bottom: 1px solid var(--background-team-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*# sourceMappingURL=main.css.map */
