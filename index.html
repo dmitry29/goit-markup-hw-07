@@ -73,64 +73,68 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        
         <button  class="btn" type="button" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
         
 <!--------------------------MODAL----------------------->
       <div class="modal-backdrop" data-modal="">
         <div class="modal">
-          <button class="close-button" type="button" data-modal-close="" aria-label="Закрыть окно">
+          <button class="btn__close" type="button" data-modal-close="" aria-label="Закрыть окно">
             <svg class="svg" width="18px" height="18px">
               <use href="./images/svg/sprite.svg#icon-close-black"></use>
             </svg>
           </button>
-          <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
-          <form class="contact-form" autocomplete="off">
-            <label class="form-field">
-              <span class="form-label">Имя</span>
-              <span class="form-input-container">
-                <input class="form-input" name="name" type="text">
-                <svg class="form-input-icon" width="18px" height="18px">
+
+          <span class="modal__title">Оставьте свои данные, мы вам перезвоним</span>
+          
+          <form class="form__contact" autocomplete="off">
+            <label class="form__field">
+              <span class="form__label">Имя</span>
+              <span class="form__container">
+                <input class="form__input" name="name" type="text">
+                <svg class="form__icon" width="18px" height="18px">
                   <use href="./images/svg/sprite.svg#icon-person-black"></use>
                 </svg>
               </span>
             </label>
-            <label class="form-field">
-              <span class="form-label">Телефон</span>
-              <span class="form-input-container">
-                <input class="form-input" name="phone" type="tel">
-                <svg class="form-input-icon" width="18px" height="18px">
+            <label class="form__field">
+              <span class="form__label">Телефон</span>
+              <span class="form__container">
+                <input class="form__input" name="phone" type="tel">
+                <svg class="form__icon" width="18px" height="18px">
                   <use href="./images/svg/sprite.svg#icon-phone-black"></use>
                 </svg>
               </span>
             </label>
-            <label class="form-field">
-              <span class="form-label">Почта</span>
-              <span class="form-input-container">
-                <input class="form-input" name="email" type="email">
-                <svg class="form-input-icon" width="18px" height="18px">
+            <label class="form__field">
+              <span class="form__label">Почта</span>
+              <span class="form__container">
+                <input class="form__input" name="email" type="email">
+                <svg class="form__icon" width="18px" height="18px">
                   <use href="./images/svg/sprite.svg#icon-email-black"></use>
                 </svg>
               </span>
             </label>
-            <label class="form-field comments">
-              <span class="form-label">Комментарий</span>
-              <textarea class="form-comments" name="comments" placeholder="Введите текст"></textarea>
+            <label class="form__field comments">
+              <span class="form__label">Комментарий</span>
+              <textarea class="form__comments" name="comments" placeholder="Введите текст"></textarea>
             </label>
-            <label class="form-checkbox">
-              <span class="checkbox-container">
-                <input class="checkbox" name="agreement" type="checkbox">
-                <svg class="checkbox-icon-checked" width="16px" height="15px">
+            <label class="checkbox">
+              <span class="checkbox__container">
+                <input class="checkbox__form" name="agreement" type="checkbox">
+                <svg class="icon-checked" width="16px" height="15px">
                   <use href="./images/svg/sprite.svg#icon-icon-check" width="16" height="15"></use>
                 </svg>
-                <span class="checkbox-icon-unchecked"></span>
+                <span class="icon-unchecked"></span>
               </span>
-              <span class="checkbox-label">
+              <span class="checkbox__label">
                 Соглашаюсь с рассылкой и принимаю
-                <a class="checkbox-label-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
+                <a class="checkbox__link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
               </span>
             </label>
+
             <button class="btn" type="submit">Отправить</button>
           </form>
         </div>
@@ -150,7 +154,7 @@
                   <use  href="./images/svg/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-title">Внимание к деталям</h3>
+              <h3 class="about__title">Внимание к деталям</h3>
 
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
@@ -163,7 +167,7 @@
                   <use href="./images/svg/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section-title">Пунктуальность</h3>
+              <h3 class="about__title">Пунктуальность</h3>
 
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
@@ -177,7 +181,7 @@
                 </svg>
               </div>
 
-              <h3 class="section-title">Планирование</h3>
+              <h3 class="about__title">Планирование</h3>
 
               <p class="text">
                 Равным образом консультация с широким активом в значительной
@@ -190,7 +194,7 @@
                   <use href="./images/svg/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-title">Современные технологии</h3>
+              <h3 class="about__title">Современные технологии</h3>
 
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -201,14 +205,14 @@
         </div>
       </section>
 
-      <!----------------------------работы команды-------------------------------->
+      <!----------------------------WORKS-TEAM-------------------------------->
 
-      <section class="section">
+      <section class="work-team">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
-          <ul class="works-team">
-            <li class="img">
-              <div class="img-box">
+          <ul class="work-team__shifts">
+            <li class="work-team__item">
+              <div class="work-team__img">
                 <img
                   src="./images/img.jpg"
                   alt="keyboard"
@@ -218,8 +222,8 @@
                 <p class="img-overlay">Десктопные приложения</p>
               </div>
             </li>
-            <li class="img">
-              <div class="img-box">
+            <li class="work-team__item">
+              <div class="work-team__img">
                 <img
                   src="./images/img(1).jpg"
                   alt="mobile"
@@ -229,8 +233,8 @@
                 <p class="img-overlay">Мобильные приложения</p>
               </div>
             </li>
-            <li class="img">
-              <div class="img-box">
+            <li class="work-team__item">
+              <div class="work-team__img">
                 <img
                   src="./images/img(2).jpg"
                   alt="tablet"
@@ -259,7 +263,7 @@
                   height="260"
                 />
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
                 
@@ -307,7 +311,7 @@
                   height="260"
                 />
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="nets">
@@ -354,7 +358,7 @@
                   height="260"
                 />
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="nets">
@@ -401,7 +405,7 @@
                   height="260"
                 />
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="nets">
@@ -444,48 +448,48 @@
 
       <!------------------------------CLIENTS----------------->
 
-      <section class="section-client">
+      <section class="clients">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
 
-          <ul class="clients">
-            <li class="client">
-              <a class="client-link" href="">
+          <ul class="clients__list">
+            <li class="client__item">
+              <a class="client__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/svg/sprite.svg#icon-Logo"></use></svg
               ></a>
             </li>
 
-            <li class="client">
-              <a class="client-link" href="">
+            <li class="client__item">
+              <a class="client__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/svg/sprite.svg#icon-Logo1"></use></svg
               ></a>
             </li>
 
-            <li class="client">
-              <a class="client-link" href="">
+            <li class="client__item">
+              <a class="client__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/svg/sprite.svg#icon-Logo2"></use></svg
               ></a>
             </li>
 
-            <li class="client">
-              <a class="client-link" href="">
+            <li class="client__item">
+              <a class="client__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/svg/sprite.svg#icon-Logo3"></use></svg
               ></a>
             </li>
 
-            <li class="client">
-              <a class="client-link" href="">
+            <li class="client__item">
+              <a class="client__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/svg/sprite.svg#icon-Logo4"></use></svg
               ></a>
             </li>
 
-            <li class="client">
-              <a class="client-link" href="">
+            <li class="client__item">
+              <a class="client__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/svg/sprite.svg#icon-Logo5"></use></svg
               ></a>
@@ -499,7 +503,7 @@
 
     <section class="footer">
       <div class="container footer-container">
-        <div class="footer-box">
+        <div class="footer__box">
           
           <a class="logo" href=""
             >Web<span class="logo__text--light">Studio</span></a
@@ -554,16 +558,16 @@
             </li>
           </ul>
         </div>
-         <div class="footer-subscribe-container">
-           <p class="title-subscribe">Подпишитесь на рассылку</p>
-          <form class="form" autocomplete="off">
-            <label for="footer-email" class="hidden-caption">Почта</label>    
-            <input class="subscribe-form-email" name="email" type="email" id="footer-email" placeholder="E-mail">
+         <div class="subscribe__container">
+           <p class="subscribe__title">Подпишитесь на рассылку</p>
+          <form class="subscribe__form" autocomplete="off">
+            <label class="hidden-caption" for="footer-email" >Почта</label>    
+            <input class="subscribe__email" name="email" type="email" id="footer-email" placeholder="E-mail">
             
             <button class="btn" type="submit">
-              <span class="footer-button-content">
+              <span class="btn__content">
                 Подписаться
-                <svg class="footer-button-icon" width="24" height="24">
+                <svg class="btn__icon" width="24" height="24">
                   <use href="./images/svg/sprite.svg#icon-icon-send"></use>
                 </svg>
               </span>
