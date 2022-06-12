@@ -12,11 +12,13 @@
 @import './base/card-set';
 
 
-
-
 //components 
 
-@import './components/button';
+@import 'components/button';
+@import 'components/navigation';
+@import 'components/modal-form';
+@import 'components/logo';
+@import 'components/hero';
+
 
 //layouts
-
