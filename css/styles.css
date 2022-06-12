@@ -1,21 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
-a {
-  text-decoration: var(--text-decoration);
-}
-
-ul {
-  list-style: var(--list-style);
-}
 
 /******************header-box*******************/
 
@@ -27,12 +10,12 @@ ul {
 }
 
 .nav__list {
-  display: flex;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  list-style: none;
-  
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+
 }
 
 .nav__list--start {
@@ -106,9 +89,6 @@ ul {
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 
 /*******************LOGO********************/
 
@@ -201,13 +181,10 @@ ul {
   transition: color var(--transition-timing) var(--transition-function);
 }
 
+.svg-link,
 .form__icon,
 .svg {
   fill: currentColor; 
-}
-
-.svg-link {
-  fill: currentColor;
 }
 
 .svg__mail,
@@ -221,6 +198,9 @@ ul {
   transition: color var(--transition-timing) var(--transition-function);
 }
 
+
+
+.form__label:focus-within,
 .form__field:focus-within .form__icon {
   fill: var(--color-accent);
 }
@@ -243,9 +223,6 @@ ul {
   letter-spacing: 0.01em;
 }
 
-.form__label:focus-within {
-  background-color: var(--color-accent);
-}
 
 .form__container {
   position: relative;
@@ -267,9 +244,7 @@ ul {
   transition: border-color var(--transition-timing) var(--transition-function);
 }
 
-.form__field:focus-within .form__icon {
-  color: var(--accent-color);
-}
+
 
 .form__field:focus-within .form__input,
 .form__field:focus-within .form__comments {
@@ -401,7 +376,7 @@ ul {
   text-transform: uppercase;
 }
 
-.btn {
+/* .btn {
   background-color: var(--color-accent);
   color: var(--hero-text-color);
   min-width: 200px;
@@ -447,7 +422,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /*******************Наши особенности******************/
 .about {
@@ -650,7 +625,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   border-color: #fff;
 }
 
-.btn {
+/* .btn {
   background-color: var(--color-accent);
   color: var(--hero-text-color);
   min-width: 200px;
@@ -671,7 +646,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   transition: background-color var(--transition-timing)
     var(--transition-function);
-}
+} */
 
 /*****************Наши клиенты**********************/
 .clients__list {
@@ -829,20 +804,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 /**********************PROJECTS*******************/
 
-.card__set {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
-.card__thumb {
-  position: relative;
-  overflow: hidden;
-}
 
 .card__text {
   position: absolute;
@@ -880,33 +842,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card__set .card__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 
-.card__item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.card__item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
-
-.card__content {
-  background: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.card__set .card__content {
-  border-right: 1px solid var(--background-team-color);
-  border-bottom: 1px solid var(--background-team-color);
-  border-left: 1px solid var(--background-team-color);
-  padding: 20px 20px;
-}
 
 .projects__title {
   margin-bottom: 4px;
