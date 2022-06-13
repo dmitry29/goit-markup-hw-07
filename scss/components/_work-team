@@ -1,0 +1,17 @@
+.work-team {
+margin-bottom: 94px;
+margin-top: 94px;
+}
+
+
+.work-team__item {
+  display: block;
+  position: relative;
+}
+
+.work-team__item:not(:last-child) {
+  display: block;
+  max-width: 100%;
+  margin-right: 30px;
+
+}
